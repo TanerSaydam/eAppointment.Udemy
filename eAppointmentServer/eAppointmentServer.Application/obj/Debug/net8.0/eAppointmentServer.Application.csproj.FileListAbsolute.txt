@@ -1,0 +1,16 @@
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\bin\Debug\net8.0\eAppointmentServer.Application.deps.json
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\bin\Debug\net8.0\eAppointmentServer.Application.dll
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\bin\Debug\net8.0\eAppointmentServer.Application.pdb
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\bin\Debug\net8.0\eAppointmentServer.Domain.dll
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\bin\Debug\net8.0\eAppointmentServer.Domain.pdb
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\eAppointmentServer.Application.csproj.AssemblyReference.cache
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\eAppointmentServer.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\eAppointmentServer.Application.AssemblyInfoInputs.cache
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\eAppointmentServer.Application.AssemblyInfo.cs
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\eAppointmentServer.Application.csproj.CoreCompileInputs.cache
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\eAppointmentServer.Application.sourcelink.json
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\eAppoint.F26F487F.Up2Date
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\eAppointmentServer.Application.dll
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\refint\eAppointmentServer.Application.dll
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\eAppointmentServer.Application.pdb
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Application\obj\Debug\net8.0\ref\eAppointmentServer.Application.dll
