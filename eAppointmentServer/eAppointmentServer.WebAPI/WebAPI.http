@@ -5,8 +5,8 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "userNameOrEmail": "string",
-  "password": "string"
+  "userNameOrEmail": "admin",
+  "password": "1"
 }
 
 ###
