@@ -345,6 +345,18 @@
             "related": ".xml"
           }
         }
+      },
+      "TS.EntityFrameworkCore.GenericRepository/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/GenericRepository.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/GenericRepository.dll": {}
+        }
       }
     }
   },
@@ -947,12 +959,27 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "TS.EntityFrameworkCore.GenericRepository/8.0.0": {
+      "sha512": "Xt2+9exUvy4IzPGJZQh3J3dmntTiGAC8+8ehJACcWzwq+2iNTvMNFIoiOQXSlI/PJxh4ZUM/TnGRsv2jLuF4nw==",
+      "type": "package",
+      "path": "ts.entityframeworkcore.genericrepository/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/GenericRepository.dll",
+        "logo.jpg",
+        "ts.entityframeworkcore.genericrepository.8.0.0.nupkg.sha512",
+        "ts.entityframeworkcore.genericrepository.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Ardalis.SmartEnum >= 8.0.0",
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.3"
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.3",
+      "TS.EntityFrameworkCore.GenericRepository >= 8.0.0"
     ]
   },
   "packageFolders": {
@@ -1013,6 +1040,10 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.3, )"
+          },
+          "TS.EntityFrameworkCore.GenericRepository": {
+            "target": "Package",
+            "version": "[8.0.0, )"
           }
         },
         "imports": [
@@ -1026,12 +1057,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.1, 8.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.1, 8.0.1]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.1, 8.0.1]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
