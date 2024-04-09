@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "GkbrLMBM7trgLSX3r6Yu1dasV4VV8e3bdl3ZQTnSYPdG9yKWwjjkuh2gk662ec8eNeee/ZgGO6800RP4iZ8hlA==",
+  "dgSpecHash": "ENDe4wKSaXIZgeNnxPjmctYyygONTLq0uD5qzd4Hep31WXUoGgDBjlEHhYp9onTIROoDP8CGGgM1OVWIEzL1uA==",
   "success": true,
   "projectFilePath": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\eAppointmentServer.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\taner\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.1\\microsoft.netcore.app.ref.8.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.1\\microsoft.windowsdesktop.app.ref.8.0.1.nupkg.sha512",
