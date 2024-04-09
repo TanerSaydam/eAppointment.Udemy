@@ -47,6 +47,15 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "TS.Result/8.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/TS.Result.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/TS.Result.dll": {}
+        }
       }
     }
   },
@@ -112,12 +121,28 @@
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "TS.Result/8.0.5": {
+      "sha512": "0ST1EYnw/C99Lxm62FEDW1jfUBWtWcQ5vVVJtKsCdNFrCnSvOu3xJim6ILy4fKH7KgNAk4KJXom/DZdZ7DL1dQ==",
+      "type": "package",
+      "path": "ts.result/8.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.jpg",
+        "lib/net8.0/TS.Result.dll",
+        "ts.result.8.0.5.nupkg.sha512",
+        "ts.result.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "MediatR >= 12.2.0",
-      "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.0"
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.0",
+      "TS.Result >= 8.0.5"
     ]
   },
   "packageFolders": {
@@ -178,6 +203,10 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "TS.Result": {
+            "target": "Package",
+            "version": "[8.0.5, )"
           }
         },
         "imports": [
