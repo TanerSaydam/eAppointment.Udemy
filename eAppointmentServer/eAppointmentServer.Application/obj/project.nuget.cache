@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ba7HRZRrkZbGSlAFWL+O86/Thi3EkUZFvRdhoQ8xdet/tArWtuWy2wbOcgW6By8ArghGPDgJtiOfIlW+PFRcBw==",
+  "dgSpecHash": "yhVGYXiiGjXqkIpwUG2I9hrBN63854XvvEbDLlVcWTtO2nYK7OHUmG87NRpg86mLe96jRrSVuixTxKRCsEd1ug==",
   "success": true,
   "projectFilePath": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\eAppointmentServer.Application.csproj",
   "expectedPackageFiles": [
@@ -27,10 +27,7 @@
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\ts.entityframeworkcore.genericrepository\\8.0.0\\ts.entityframeworkcore.genericrepository.8.0.0.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.5\\ts.result.8.0.5.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.1\\microsoft.netcore.app.ref.8.0.1.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.1\\microsoft.windowsdesktop.app.ref.8.0.1.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.1\\microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512"
+    "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.5\\ts.result.8.0.5.nupkg.sha512"
   ],
   "logs": []
 }
