@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\eAppointment\\eAppointmentServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.application\\features\\auth\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|solutionrelative:eappointmentserver.application\\features\\auth\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.application\\features\\auth\\login\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|solutionrelative:eappointmentserver.application\\features\\auth\\login\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.application\\services\\ijwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|solutionrelative:eappointmentserver.application\\services\\ijwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,14 +43,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginCommand.cs",
-              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommand.cs",
-              "RelativeDocumentMoniker": "eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommand.cs",
-              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommand.cs",
-              "RelativeToolTip": "eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Title": "LoginCommandHandler.cs",
+              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommandHandler.cs",
+              "RelativeDocumentMoniker": "eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommandHandler.cs",
+              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommandHandler.cs",
+              "RelativeToolTip": "eAppointmentServer.Application\\Features\\Auth\\Login\\LoginCommandHandler.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAowCMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T01:07:57.518Z",
+              "WhenOpened": "2024-04-09T01:30:49.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IJwtProvider.cs",
+              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Services\\IJwtProvider.cs",
+              "RelativeDocumentMoniker": "eAppointmentServer.Application\\Services\\IJwtProvider.cs",
+              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Services\\IJwtProvider.cs",
+              "RelativeToolTip": "eAppointmentServer.Application\\Services\\IJwtProvider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T01:30:23.575Z",
               "EditorCaption": ""
             }
           ]
