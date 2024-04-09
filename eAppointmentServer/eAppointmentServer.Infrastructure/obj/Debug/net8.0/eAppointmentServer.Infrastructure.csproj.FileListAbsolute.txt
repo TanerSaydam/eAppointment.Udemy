@@ -4,3 +4,17 @@ C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\obj\Debug\n
 C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\obj\Debug\net8.0\eAppointmentServer.Infrastructure.AssemblyInfo.cs
 C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\obj\Debug\net8.0\eAppointmentServer.Infrastructure.csproj.CoreCompileInputs.cache
 C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\obj\Debug\net8.0\eAppointmentServer.Infrastructure.sourcelink.json
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\bin\Debug\net8.0\eAppointmentServer.Infrastructure.deps.json
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\bin\Debug\net8.0\eAppointmentServer.Infrastructure.runtimeconfig.json
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\bin\Debug\net8.0\eAppointmentServer.Infrastructure.dll
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\bin\Debug\net8.0\eAppointmentServer.Infrastructure.pdb
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\bin\Debug\net8.0\eAppointmentServer.Application.dll
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\bin\Debug\net8.0\eAppointmentServer.Domain.dll
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\bin\Debug\net8.0\eAppointmentServer.Application.pdb
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\bin\Debug\net8.0\eAppointmentServer.Domain.pdb
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\obj\Debug\net8.0\eAppoint.FD94C6F2.Up2Date
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\obj\Debug\net8.0\eAppointmentServer.Infrastructure.dll
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\obj\Debug\net8.0\refint\eAppointmentServer.Infrastructure.dll
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\obj\Debug\net8.0\eAppointmentServer.Infrastructure.pdb
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\obj\Debug\net8.0\eAppointmentServer.Infrastructure.genruntimeconfig.cache
+C:\eAppointment\eAppointmentServer\eAppointmentServer.Infrastructure\obj\Debug\net8.0\ref\eAppointmentServer.Infrastructure.dll
