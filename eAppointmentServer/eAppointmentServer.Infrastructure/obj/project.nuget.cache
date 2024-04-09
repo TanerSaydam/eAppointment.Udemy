@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "7nFd4JQ9XA7bIBFkd5gQilP7eqMGFAls2+E3qavYALSqbIpTwWtldkZlIrvbGLgxQTXkpusB5UYmhFiUvN4Tfw==",
+  "success": true,
+  "projectFilePath": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Infrastructure\\eAppointmentServer.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\taner\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.1\\microsoft.netcore.app.ref.8.0.1.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.1\\microsoft.windowsdesktop.app.ref.8.0.1.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.1\\microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
