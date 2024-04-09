@@ -731,7 +731,7 @@
           "System.Text.Json": "8.0.0"
         },
         "compile": {
-          "lib/net8.0/_._": {
+          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
             "related": ".xml"
           }
         },
@@ -1071,6 +1071,23 @@
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
+        }
+      },
+      "Scrutor/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.DependencyModel": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Scrutor.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Scrutor.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "System.CodeDom/4.4.0": {
@@ -3375,6 +3392,29 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "Scrutor/4.2.2": {
+      "sha512": "t5VIYA7WJXoJJo7s4DoHakMGwTu+MeEnZumMOhTCH7kz9xWha24G7dJNxWrHPlu0ZdZAS4jDZCxxAnyaBh7uYw==",
+      "type": "package",
+      "path": "scrutor/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Scrutor.dll",
+        "lib/net461/Scrutor.pdb",
+        "lib/net461/Scrutor.xml",
+        "lib/net6.0/Scrutor.dll",
+        "lib/net6.0/Scrutor.pdb",
+        "lib/net6.0/Scrutor.xml",
+        "lib/netcoreapp3.1/Scrutor.dll",
+        "lib/netcoreapp3.1/Scrutor.pdb",
+        "lib/netcoreapp3.1/Scrutor.xml",
+        "lib/netstandard2.0/Scrutor.dll",
+        "lib/netstandard2.0/Scrutor.pdb",
+        "lib/netstandard2.0/Scrutor.xml",
+        "scrutor.4.2.2.nupkg.sha512",
+        "scrutor.nuspec"
+      ]
+    },
     "System.CodeDom/4.4.0": {
       "sha512": "2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
       "type": "package",
@@ -4525,6 +4565,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.3",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.0",
+      "Scrutor >= 4.2.2",
       "eAppointmentServer.Application >= 1.0.0",
       "eAppointmentServer.Domain >= 1.0.0"
     ]
@@ -4608,6 +4649,10 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "Scrutor": {
+            "target": "Package",
+            "version": "[4.2.2, )"
           }
         },
         "imports": [
@@ -4621,12 +4666,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.1, 8.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.1, 8.0.1]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.1, 8.0.1]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

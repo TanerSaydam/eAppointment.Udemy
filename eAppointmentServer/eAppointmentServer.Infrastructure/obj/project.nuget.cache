@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AVL31D0C0AaUojEMpugPcFfJXgr+HuFTqxna+qvP87W1pby4dVDxUxJ2o1Ij1ruwQcHEg77OWx0c7FgF7lYkrQ==",
+  "dgSpecHash": "WaygueSxCSzaKeog5a+lepbGVO90qx8+25nxSWhahADQA8+xl9XnnuP6Enufitb0puZGLdW3MSu/kojN4w9hVQ==",
   "success": true,
   "projectFilePath": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Infrastructure\\eAppointmentServer.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -55,6 +55,7 @@
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\scrutor\\4.2.2\\scrutor.4.2.2.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
@@ -89,7 +90,10 @@
     "C:\\Users\\taner\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\ts.entityframeworkcore.genericrepository\\8.0.0\\ts.entityframeworkcore.genericrepository.8.0.0.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.5\\ts.result.8.0.5.nupkg.sha512"
+    "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.5\\ts.result.8.0.5.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.1\\microsoft.netcore.app.ref.8.0.1.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.1\\microsoft.windowsdesktop.app.ref.8.0.1.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.1\\microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }
