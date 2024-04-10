@@ -1,5 +1,5 @@
 export class ResultModel<T>{
-    data?: T;
+    data: any;
     errorMessages?: string[]
     isSuccesful:boolean = true;
     statusCode: number = 200;

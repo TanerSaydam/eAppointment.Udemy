@@ -36,19 +36,21 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Taner Saydam</td>
-                    <td>Acil</td>
-                    <td>
-                        <button class="btn btn-sm btn-outline-primary me-1" title="Update">
-                            <i class="fa-solid fa-edit"></i>
-                        </button>
-                        <button class="btn btn-sm btn-outline-danger" title="Delete">
-                            <i class="fa-solid fa-trash"></i>
-                        </button>
-                    </td>
-                </tr>
+                @for(doctor of doctors; track doctor){
+                    <tr>
+                        <td>{{$index}}</td>
+                        <td>{{doctor.fullName}}</td>
+                        <td>{{doctor.department}}</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary me-1" title="Update">
+                                <i class="fa-solid fa-edit"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger" title="Delete">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                }               
             </tbody>
         </table>
     </div>
