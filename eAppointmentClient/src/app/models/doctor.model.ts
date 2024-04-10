@@ -3,5 +3,10 @@ export class DoctorModel{
     firstName: string = "";
     lastName: string = "";
     fullName: string = "";
-    department: number = 0;    
+    department: any = "";
+}
+
+export class DepartmentModel{
+    name: string = "";
+    value: number = 0;
 }

@@ -12,7 +12,7 @@
     <div class="form-group">
         <div class="row">
             <div class="col-xl-9 col-lg-8 col-md-6 col-sm-12 col-12">
-                <button class="btn btn-dark">
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#addModal">
                     <i class="fa-solid fa-plus me-1"></i>
                     <span>Add Doctor</span>
                 </button>
@@ -38,9 +38,9 @@
             <tbody>
                 @for(doctor of doctors; track doctor){
                     <tr>
-                        <td>{{$index}}</td>
+                        <td>{{$index + 1}}</td>
                         <td>{{doctor.fullName}}</td>
-                        <td>{{doctor.department}}</td>
+                        <td>{{doctor.department.name}}</td>
                         <td>
                             <button class="btn btn-sm btn-outline-primary me-1" title="Update">
                                 <i class="fa-solid fa-edit"></i>
@@ -55,3 +55,43 @@
         </table>
     </div>
 </div>
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Add Doctor Form</h1>
+          <button type="button" #addModalCloseBtn class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form #addForm="ngForm" formValidate autocomplete="off" (ngSubmit)="add(addForm)">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" [(ngModel)]="createModel.firstName" name="firstName" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Last Name</label>
+                    <input type="text" [(ngModel)]="createModel.lastName" name="lastName" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Department</label>
+                    <select class="form-control" name="department" [(ngModel)]="createModel.department" required>
+                        <option value="">Select...</option>
+                        @for(department of departments; track department){
+                            <option [value]="department.value">{{department.name}}</option>
+                        }                        
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-dark w-100">Save</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>

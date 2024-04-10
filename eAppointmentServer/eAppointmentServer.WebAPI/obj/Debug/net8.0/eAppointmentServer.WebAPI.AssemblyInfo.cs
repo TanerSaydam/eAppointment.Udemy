@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eAppointmentServer.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56e4ca5bbd7af988d2a6ede5fa758d1ecd3a8cc4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d488a322904bcbeb4e3bb4a47334b4fd16c6970")]
 [assembly: System.Reflection.AssemblyProductAttribute("eAppointmentServer.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eAppointmentServer.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,6 +18,22 @@
           }
         }
       },
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/12.2.0": {
         "type": "package",
         "dependencies": {
@@ -434,6 +450,21 @@
         "lib/net8.0/Ardalis.SmartEnum.xml",
         "lib/netstandard2.1/Ardalis.SmartEnum.dll",
         "lib/netstandard2.1/Ardalis.SmartEnum.xml"
+      ]
+    },
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
       ]
     },
     "MediatR/12.2.0": {
@@ -1081,6 +1112,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AutoMapper >= 13.0.1",
       "MediatR >= 12.2.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.0",
       "TS.Result >= 8.0.5",
@@ -1142,6 +1174,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "MediatR": {
             "target": "Package",
             "version": "[12.2.0, )"

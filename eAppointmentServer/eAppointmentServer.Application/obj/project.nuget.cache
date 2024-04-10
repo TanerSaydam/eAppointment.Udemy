@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "o1uHvK8NielIPGnBlNIdocmfybWn6r7mgEH2IfQJQGrO033oguzFiVaCNAVC6xmajAMuxBHVy9rg1xpNeTJOyA==",
+  "dgSpecHash": "WQPpN4yfeAHH27niAUiNXj4mZh7NCHq3ryDgUD8/9JzIuJmaTbv8xE+znMw3q0MkZMyNXkXoq0Dbr2f4kjEvHw==",
   "success": true,
   "projectFilePath": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\eAppointmentServer.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taner\\.nuget\\packages\\ardalis.smartenum\\8.0.0\\ardalis.smartenum.8.0.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.3\\microsoft.aspnetcore.cryptography.internal.8.0.3.nupkg.sha512",

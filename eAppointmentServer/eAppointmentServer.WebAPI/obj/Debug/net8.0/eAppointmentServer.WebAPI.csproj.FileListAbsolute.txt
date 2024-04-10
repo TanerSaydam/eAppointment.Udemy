@@ -157,3 +157,4 @@ C:\eAppointment\eAppointmentServer\eAppointmentServer.WebAPI\obj\Debug\net8.0\eA
 C:\eAppointment\eAppointmentServer\eAppointmentServer.WebAPI\obj\Debug\net8.0\eAppointmentServer.WebAPI.genruntimeconfig.cache
 C:\eAppointment\eAppointmentServer\eAppointmentServer.WebAPI\obj\Debug\net8.0\ref\eAppointmentServer.WebAPI.dll
 C:\eAppointment\eAppointmentServer\eAppointmentServer.WebAPI\bin\Debug\net8.0\DefaultCorsPolicyNugetPackage.dll
+C:\eAppointment\eAppointmentServer\eAppointmentServer.WebAPI\bin\Debug\net8.0\AutoMapper.dll
