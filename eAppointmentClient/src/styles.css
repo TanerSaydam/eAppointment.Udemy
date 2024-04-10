@@ -7,3 +7,13 @@
 a{
     cursor: pointer;
 }
+
+.search{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+input[type="search"]{
+    padding-left: 35px;
+}
