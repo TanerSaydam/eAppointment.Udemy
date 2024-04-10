@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\eAppointment\\eAppointmentServer\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00B0F2A4-B88A-43AD-AAE6-F2A6DE720818}|eAppointmentServer.Domain\\eAppointmentServer.Domain.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00B0F2A4-B88A-43AD-AAE6-F2A6DE720818}|eAppointmentServer.Domain\\eAppointmentServer.Domain.csproj|solutionrelative:eappointmentserver.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 267,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +35,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Domain\\Entities\\Patient.cs",
+              "RelativeDocumentMoniker": "eAppointmentServer.Domain\\Entities\\Patient.cs",
+              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Domain\\Entities\\Patient.cs",
+              "RelativeToolTip": "eAppointmentServer.Domain\\Entities\\Patient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T22:52:53.128Z",
+              "EditorCaption": ""
             }
           ]
         }
