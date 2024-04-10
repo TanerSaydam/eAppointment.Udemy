@@ -3,6 +3,7 @@ using eAppointmentServer.Application.Features.Doctors.GetAllDoctor;
 using eAppointmentServer.WebAPI.Abstractions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using TS.Result;
 
 namespace eAppointmentServer.WebAPI.Controllers;
 
