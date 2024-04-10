@@ -42,7 +42,7 @@
                         <td>{{doctor.fullName}}</td>
                         <td>{{doctor.department.name}}</td>
                         <td>
-                            <button class="btn btn-sm btn-outline-primary me-1" title="Update">
+                            <button (click)="get(doctor)" data-bs-toggle="modal" data-bs-target="#updateModal" class="btn btn-sm btn-outline-primary me-1" title="Update">
                                 <i class="fa-solid fa-edit"></i>
                             </button>
                             <button (click)="delete(doctor.id,doctor.fullName)" class="btn btn-sm btn-outline-danger" title="Delete">
@@ -56,6 +56,7 @@
     </div>
 </div>
 
+<!-- Create Modal -->
 <div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -79,8 +80,8 @@
 
                 <div class="form-group mt-2">
                     <label>Department</label>
-                    <select class="form-control" name="department" [(ngModel)]="createModel.department" required>
-                        <option value="">Select...</option>
+                    <select class="form-control" name="department" [(ngModel)]="createModel.departmentValue" required>
+                        <option [value]=0>Select...</option>
                         @for(department of departments; track department){
                             <option [value]="department.value">{{department.name}}</option>
                         }                        
@@ -94,4 +95,45 @@
         </form>
       </div>
     </div>
-  </div>
+</div>
+
+<!-- Update Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Update Doctor Form</h1>
+          <button type="button" #updateModalCloseBtn class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form #updateForm="ngForm" formValidate autocomplete="off" (ngSubmit)="update(updateForm)">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" [(ngModel)]="updateModel.firstName" name="updateFirstName" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Last Name</label>
+                    <input type="text" [(ngModel)]="updateModel.lastName" name="updateLastName" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Department</label>
+                    <select class="form-control" name="updateDepartment" [(ngModel)]="updateModel.departmentValue" required>
+                        <option value="">Select...</option>
+                        @for(department of departments; track department){
+                            <option [value]="department.value">{{department.name}}</option>
+                        }                        
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary w-100">Update</button>
+            </div>
+        </form>
+      </div>
+    </div>
+</div>
