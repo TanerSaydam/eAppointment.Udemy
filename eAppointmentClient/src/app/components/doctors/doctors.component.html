@@ -45,7 +45,7 @@
                             <button class="btn btn-sm btn-outline-primary me-1" title="Update">
                                 <i class="fa-solid fa-edit"></i>
                             </button>
-                            <button class="btn btn-sm btn-outline-danger" title="Delete">
+                            <button (click)="delete(doctor.id,doctor.fullName)" class="btn btn-sm btn-outline-danger" title="Delete">
                                 <i class="fa-solid fa-trash"></i>
                             </button>
                         </td>
