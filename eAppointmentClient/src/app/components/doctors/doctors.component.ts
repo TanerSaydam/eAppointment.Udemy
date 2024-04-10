@@ -7,11 +7,12 @@ import { departments } from '../../constants';
 import { FormsModule, NgForm } from '@angular/forms';
 import { FormValidateDirective } from 'form-validate-angular';
 import { SwalService } from '../../services/swal.service';
+import { DoctorPipe } from '../../pipe/doctor.pipe';
 
 @Component({
   selector: 'app-doctors',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, FormValidateDirective],
+  imports: [CommonModule, RouterLink, FormsModule, FormValidateDirective, DoctorPipe],
   templateUrl: './doctors.component.html',
   styleUrl: './doctors.component.css'
 })
@@ -24,6 +25,8 @@ export class DoctorsComponent implements OnInit {
 
   createModel: DoctorModel = new DoctorModel();
   updateModel: DoctorModel = new DoctorModel();
+
+  search: string = "";
 
   constructor(
     private http: HttpService,
