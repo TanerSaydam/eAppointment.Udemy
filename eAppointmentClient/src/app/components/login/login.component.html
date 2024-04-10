@@ -1,1 +1,35 @@
-<p>login works!</p>
+<div class="row d-flex justify-content-center align-items-center" style="height: 98vh;">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3>Sign In</h3>
+                <p>Please fill your information to sign in</p>
+            </div>
+            <div class="card-body">
+                <form formValidate #loginForm="ngForm" autocomplete="off">
+                    <div class="form-group">
+                        <label>Username or Email</label>
+                        <input type="text" class="form-control" [(ngModel)]="login.userNameOrEmail" name="userNameOrEmail" required minlength="3">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group mt-2 position-relative">
+                        <label>Password</label>
+                        <input type="password" #password class="form-control" [(ngModel)]="login.password" name="password" required value="asdasd">
+                        <div class="invalid-feedback"></div>
+                        @if(password.type === "password"){
+                            <i class="fa-solid fa-eye eye" (click)="showOrHidePassword()"></i>
+                        }@else {
+                            <i class="fa-solid fa-eye-slash eye" (click)="showOrHidePassword()"></i>
+                        }
+                    </div>
+                    <div class="form-group mt-2">
+                        <button class="btn btn-dark w-100">
+                            <i class="fa-solid fa-lock me-1"></i>
+                            Sign In
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
