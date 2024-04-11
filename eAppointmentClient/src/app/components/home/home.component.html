@@ -1,1 +1,45 @@
-<p>home works!</p>
+<div class="mt-3 d-flex justify-content-between align-items-center">
+    <h3>Welcome e-Appointment Application</h3>    
+</div>
+
+<div class="mt-2">
+    <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mt-1">
+            <label>Department</label>
+            <select name="department" [(ngModel)]="selectedDepartmentValue" class="form-control">
+                <option [value]="0">Select...</option>
+                @for(department of departments;track department){
+                    <option [value]="department.value">
+                        {{department.name}}
+                    </option>
+                }                
+            </select>
+        </div>
+
+        @if(selectedDepartmentValue > 0){
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mt-1">
+                <label>Doctor</label>
+                <select name="doctor" [(ngModel)]="selectedDoctorId" class="form-control">
+                    <option value="">Select...</option>
+                    @for(doctor of doctors;track doctor){
+                        <option [value]="doctor.id">
+                            {{doctor.fullName}}
+                        </option>
+                    } 
+                </select>
+            </div>
+        }        
+    </div>
+
+    @if(selectedDoctorId){
+        <div class="mt-2">
+            <dx-scheduler 
+                [dataSource]="appointments"
+                currentView="week"
+                [startDayHour]="9"
+                [endDayHour]="18"
+                [showAllDayPanel]="false">
+            </dx-scheduler>
+        </div>
+    }   
+</div>
