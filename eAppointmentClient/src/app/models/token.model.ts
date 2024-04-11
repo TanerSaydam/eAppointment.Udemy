@@ -3,4 +3,5 @@ export class TokenModel{
     name: string = "";
     email: string = "";
     userName: string = "";
+    roles: string[] = [];
 }

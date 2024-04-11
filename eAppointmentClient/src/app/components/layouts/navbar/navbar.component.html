@@ -12,11 +12,13 @@
           <li class="nav-item">
             <a class="nav-link active" routerLink="/patients" aria-current="page">Patients</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="/users" aria-current="page">Users</a>
-          </li>
+          @if(auth.tokenDecode.roles.includes("Admin")){
+            <li class="nav-item">
+              <a class="nav-link active" routerLink="/users" aria-current="page">Users</a>
+            </li>
+          }         
         </ul>
-        <span class="me-2">Taner Saydam</span>
+        <span class="me-2">{{auth.tokenDecode.name}}</span>
         <button (click)="signOut()" class="btn btn-outline-danger">
             <i class="fa-solid fa-power-off"></i>
         </button>
