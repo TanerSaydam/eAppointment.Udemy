@@ -10,8 +10,9 @@ import { CreateAppointmentModel } from '../../models/create-appointment.model';
 import { FormValidateDirective } from 'form-validate-angular';
 import { PatientModel } from '../../models/patient.model';
 import { SwalService } from '../../services/swal.service';
+import { setThrowInvalidWriteToSignalError } from '@angular/core/primitives/signals';
 
-declare const $:any;
+declare const $: any;
 
 @Component({
   selector: 'app-home',
@@ -32,34 +33,34 @@ export class HomeComponent {
 
   appointments: AppointmentModel[] = []
 
-  createModel:CreateAppointmentModel = new CreateAppointmentModel();
+  createModel: CreateAppointmentModel = new CreateAppointmentModel();
 
   constructor(
     private http: HttpService,
     private date: DatePipe,
     private swal: SwalService
-  ){}
+  ) { }
 
-  getAllDoctor(){
+  getAllDoctor() {
     this.selectedDoctorId = "";
-    if(this.selectedDepartmentValue > 0){
-      this.http.post<DoctorModel[]>("Appointments/GetAllDoctorByDepartment", 
-            {departmentValue: +this.selectedDepartmentValue}, (res)=> {
-        this.doctors = res.data;
-      });
+    if (this.selectedDepartmentValue > 0) {
+      this.http.post<DoctorModel[]>("Appointments/GetAllDoctorByDepartment",
+        { departmentValue: +this.selectedDepartmentValue }, (res) => {
+          this.doctors = res.data;
+        });
     }
   }
 
-  getAllAppointments(){
-    if(this.selectedDoctorId){
-      this.http.post<AppointmentModel[]>("Appointments/GetAllByDoctorId", 
-            {doctorId: this.selectedDoctorId}, (res)=> {
-        this.appointments = res.data;
-      });
+  getAllAppointments() {
+    if (this.selectedDoctorId) {
+      this.http.post<AppointmentModel[]>("Appointments/GetAllByDoctorId",
+        { doctorId: this.selectedDoctorId }, (res) => {
+          this.appointments = res.data;
+        });
     }
   }
 
-  onAppointmentFormOpening(e:any){
+  onAppointmentFormOpening(e: any) {
     e.cancel = true;
 
     this.createModel.startDate = this.date.transform(e.appointmentData.startDate, "MM.dd.yyyy HH:mm") ?? "";
@@ -69,9 +70,9 @@ export class HomeComponent {
     $("#addModal").modal("show");
   }
 
-  getPatient(){
-    this.http.post<PatientModel>("Appointments/GetPatientByIdentityNumber", {identityNumber: this.createModel.identityNumber}, res=> {
-      if(res.data === null){
+  getPatient() {
+    this.http.post<PatientModel>("Appointments/GetPatientByIdentityNumber", { identityNumber: this.createModel.identityNumber }, res => {
+      if (res.data === null) {
         this.createModel.firstName = "";
         this.createModel.lastName = "";
         this.createModel.city = "";
@@ -90,9 +91,9 @@ export class HomeComponent {
     })
   }
 
-  create(form: NgForm){
-    if(form.valid){
-      this.http.post<string>("Appointments/Create", this.createModel, res=> {
+  create(form: NgForm) {
+    if (form.valid) {
+      this.http.post<string>("Appointments/Create", this.createModel, res => {
         this.swal.callToast(res.data);
         this.addModalCloseBtn?.nativeElement.click();
         this.createModel = new CreateAppointmentModel();
@@ -101,20 +102,35 @@ export class HomeComponent {
     }
   }
 
-  onAppointmentDeleted(e:any){
-    e.cancel = true;    
+  onAppointmentDeleted(e: any) {
+    e.cancel = true;
   }
 
-  onAppointmentDeleting(e:any){
+  onAppointmentDeleting(e: any) {
     e.cancel = true;
 
     console.log(e);
-    
-    this.swal.callSwal("Delete appointment?",`You want to delete ${e.appointmentData.patient.fullName} appointment?`,()=> {
-      this.http.post<string>("Appointments/DeleteById", {id: e.appointmentData.id}, res=> {
-        this.swal.callToast(res.data,"info");
+
+    this.swal.callSwal("Delete appointment?", `You want to delete ${e.appointmentData.patient.fullName} appointment?`, () => {
+      this.http.post<string>("Appointments/DeleteById", { id: e.appointmentData.id }, res => {
+        this.swal.callToast(res.data, "info");
         this.getAllAppointments();
       });
     })
+  }
+
+  onAppointmentUpdating(e: any) {
+    e.cancel = true;
+
+    const data = {
+      id: e.oldData.id,
+      startDate: this.date.transform(e.newData.startDate, "MM.dd.yyyy HH:mm"),
+      endDate: this.date.transform(e.newData.endDate, "MM.dd.yyyy HH:mm"),
+    };
+
+    this.http.post<string>("Appointments/Update", data, res => {
+      this.swal.callToast(res.data);
+      this.getAllAppointments();
+    });
   }
 }
