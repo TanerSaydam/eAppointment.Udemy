@@ -4,9 +4,9 @@
 
 <div class="mt-2">
     <div class="row">
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mt-1">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-1">
             <label>Department</label>
-            <select name="department" [(ngModel)]="selectedDepartmentValue" class="form-control">
+            <select (change)="getAllDoctor()" name="department" [(ngModel)]="selectedDepartmentValue" class="form-control">
                 <option [value]="0">Select...</option>
                 @for(department of departments;track department){
                     <option [value]="department.value">
@@ -17,16 +17,19 @@
         </div>
 
         @if(selectedDepartmentValue > 0){
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mt-1">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-1">
                 <label>Doctor</label>
-                <select name="doctor" [(ngModel)]="selectedDoctorId" class="form-control">
-                    <option value="">Select...</option>
-                    @for(doctor of doctors;track doctor){
-                        <option [value]="doctor.id">
-                            {{doctor.fullName}}
-                        </option>
-                    } 
-                </select>
+                @if(doctors.length === 0){
+                    <input class="form-control" value="There is not doctor this department" disabled>
+                }@else {
+                    <select (change)="getAllAppointments()" name="doctor" [(ngModel)]="selectedDoctorId" class="form-control">
+                        @for(doctor of doctors;track doctor){
+                            <option [value]="doctor.id">
+                                {{doctor.fullName}}
+                            </option>
+                        } 
+                    </select>
+                }                
             </div>
         }        
     </div>
@@ -38,8 +41,9 @@
                 currentView="week"
                 [startDayHour]="9"
                 [endDayHour]="18"
-                [showAllDayPanel]="false">
+                [showAllDayPanel]="false"
+                textExpr="title">
             </dx-scheduler>
-        </div>
+        </div>       
     }   
 </div>
