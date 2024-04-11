@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\eAppointment\\eAppointmentServer\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.application\\features\\roles\\rolesync\\rolesynccommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|solutionrelative:eappointmentserver.application\\features\\roles\\rolesync\\rolesynccommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.application\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|solutionrelative:eappointmentserver.application\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD8CFD9C-5B50-4493-B7F5-8908D43D23A5}|eAppointmentServer.WebAPI\\eAppointmentServer.WebAPI.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.webapi\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD8CFD9C-5B50-4493-B7F5-8908D43D23A5}|eAppointmentServer.WebAPI\\eAppointmentServer.WebAPI.csproj|solutionrelative:eappointmentserver.webapi\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.application\\features\\roles\\rolesync\\rolesynccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C2EE775-8F49-4447-B61C-82463A6B2247}|eAppointmentServer.Application\\eAppointmentServer.Application.csproj|solutionrelative:eappointmentserver.application\\features\\roles\\rolesync\\rolesynccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00B0F2A4-B88A-43AD-AAE6-F2A6DE720818}|eAppointmentServer.Domain\\eAppointmentServer.Domain.csproj|c:\\eappointment\\eappointmentserver\\eappointmentserver.domain\\entities\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00B0F2A4-B88A-43AD-AAE6-F2A6DE720818}|eAppointmentServer.Domain\\eAppointmentServer.Domain.csproj|solutionrelative:eappointmentserver.domain\\entities\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -30,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 267,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,71 +30,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoleSyncCommandHandler.cs",
-              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Roles\\RoleSync\\RoleSyncCommandHandler.cs",
-              "RelativeDocumentMoniker": "eAppointmentServer.Application\\Features\\Roles\\RoleSync\\RoleSyncCommandHandler.cs",
-              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Roles\\RoleSync\\RoleSyncCommandHandler.cs",
-              "RelativeToolTip": "eAppointmentServer.Application\\Features\\Roles\\RoleSync\\RoleSyncCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T02:46:54.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.WebAPI\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "eAppointmentServer.WebAPI\\Controllers\\RolesController.cs",
-              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.WebAPI\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "eAppointmentServer.WebAPI\\Controllers\\RolesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T02:44:52.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RoleSyncCommand.cs",
-              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Roles\\RoleSync\\RoleSyncCommand.cs",
-              "RelativeDocumentMoniker": "eAppointmentServer.Application\\Features\\Roles\\RoleSync\\RoleSyncCommand.cs",
-              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Features\\Roles\\RoleSync\\RoleSyncCommand.cs",
-              "RelativeToolTip": "eAppointmentServer.Application\\Features\\Roles\\RoleSync\\RoleSyncCommand.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAQwAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T02:40:00.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Constants.cs",
-              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Constants.cs",
-              "RelativeDocumentMoniker": "eAppointmentServer.Application\\Constants.cs",
-              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Application\\Constants.cs",
-              "RelativeToolTip": "eAppointmentServer.Application\\Constants.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T02:37:49.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppRole.cs",
-              "DocumentMoniker": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Domain\\Entities\\AppRole.cs",
-              "RelativeDocumentMoniker": "eAppointmentServer.Domain\\Entities\\AppRole.cs",
-              "ToolTip": "C:\\eAppointment\\eAppointmentServer\\eAppointmentServer.Domain\\Entities\\AppRole.cs",
-              "RelativeToolTip": "eAppointmentServer.Domain\\Entities\\AppRole.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T02:36:07.29Z",
-              "EditorCaption": ""
             }
           ]
         }

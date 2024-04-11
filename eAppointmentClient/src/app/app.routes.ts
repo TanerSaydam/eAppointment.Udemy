@@ -7,6 +7,7 @@ import { inject } from '@angular/core';
 import { AuthService } from './services/auth.service';
 import { DoctorsComponent } from './components/doctors/doctors.component';
 import { PatientsComponent } from './components/patients/patients.component';
+import { UsersComponent } from './components/users/users.component';
 
 export const routes: Routes = [
     {
@@ -29,6 +30,10 @@ export const routes: Routes = [
             {
                 path: "patients",
                 component: PatientsComponent
+            },
+            {
+                path: "users",
+                component: UsersComponent
             }
         ]
     },

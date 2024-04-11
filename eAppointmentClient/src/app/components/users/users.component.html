@@ -1,0 +1,179 @@
+<div class="mt-3 d-flex justify-content-between align-items-center">
+    <h3>Users Page</h3>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+          <li class="breadcrumb-item active">Users</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="mt-3">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-md-6 col-sm-12 col-12">
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#addModal">
+                    <i class="fa-solid fa-plus me-1"></i>
+                    <span>Add User</span>
+                </button>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 position-relative">
+                <input type="search" class="form-control" [(ngModel)]="search" placeholder="Search user...">
+                <i class="fa-solid fa-magnifying-glass search"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group mt-1">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Full Name</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(user of users | user : search; track user){
+                    <tr>
+                        <td>{{$index + 1}}</td>
+                        <td>{{user.fullName}}</td>
+                        <td>{{user.userName}}</td>
+                        <td>{{user.email}}</td>
+                        <td>
+                            <button (click)="get(user)" data-bs-toggle="modal" data-bs-target="#updateModal" class="btn btn-sm btn-outline-primary me-1" title="Update">
+                                <i class="fa-solid fa-edit"></i>
+                            </button>
+                            <button (click)="delete(user.id,user.fullName)" class="btn btn-sm btn-outline-danger" title="Delete">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                }               
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Create Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Add User Form</h1>
+          <button type="button" #addModalCloseBtn class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form #addForm="ngForm" formValidate autocomplete="off" (ngSubmit)="add(addForm)">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" [(ngModel)]="createModel.firstName" name="firstName" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Last Name</label>
+                    <input type="text" [(ngModel)]="createModel.lastName" name="lastName" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>User Name</label>
+                    <input type="text" [(ngModel)]="createModel.userName" name="userName" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Email</label>
+                    <input type="email" [(ngModel)]="createModel.email" name="email" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Password</label>
+                    <input type="password" [(ngModel)]="createModel.password" name="password" class="form-control" required>
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Roles</label>
+                    <select class="form-control" multiple required [(ngModel)]="createModel.roleIds" name="roleIds">
+                        @for(role of roles; track role){
+                            <option [value]="role.id">
+                                {{role.name}}
+                            </option>
+                        }                        
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-dark w-100">Save</button>
+            </div>
+        </form>
+      </div>
+    </div>
+</div>
+
+<!-- Update Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Update Patient Form</h1>
+          <button type="button" #updateModalCloseBtn class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form #updateForm="ngForm" formValidate autocomplete="off" (ngSubmit)="update(updateForm)">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" [(ngModel)]="updateModel.firstName" name="updateFirstName" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Last Name</label>
+                    <input type="text" [(ngModel)]="updateModel.lastName" name="updateLastName" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>User Name</label>
+                    <input type="text" [(ngModel)]="updateModel.userName" name="updateUserName" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Email</label>
+                    <input type="email" [(ngModel)]="updateModel.email" name="updateEmail" class="form-control" required minlength="3">
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Password</label>
+                    <input type="password" [(ngModel)]="updateModel.password" name="updatePassword" class="form-control" required>
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Roles</label>
+                    <select class="form-control" multiple required [(ngModel)]="updateModel.roleIds" name="updateRoleIds">
+                        @for(role of roles; track role){
+                            <option [value]="role.id">
+                                {{role.name}}
+                            </option>
+                        }                        
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary w-100">Update</button>
+            </div>
+        </form>
+      </div>
+    </div>
+</div>
