@@ -43,7 +43,10 @@
                 [endDayHour]="18"
                 [showAllDayPanel]="false"
                 textExpr="title"
-                (onAppointmentFormOpening)="onAppointmentFormOpening($event)">
+                (onAppointmentFormOpening)="onAppointmentFormOpening($event)"
+                (onAppointmentDeleted)="onAppointmentDeleted($event)"
+                (onAppointmentDeleting)="onAppointmentDeleting($event)"
+                >
             </dx-scheduler>
         </div>       
     }   
