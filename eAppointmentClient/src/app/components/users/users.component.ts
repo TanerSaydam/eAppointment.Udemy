@@ -19,7 +19,7 @@ import { RoleModel } from '../../models/role.model';
 export class UsersComponent {
   users: UserModel[] = [];  
   roles: RoleModel[] = [];
-  
+
   @ViewChild("addModalCloseBtn") addModalCloseBtn: ElementRef<HTMLButtonElement> | undefined;
   @ViewChild("updateModalCloseBtn") updateModalCloseBtn: ElementRef<HTMLButtonElement> | undefined;
 
@@ -35,11 +35,18 @@ export class UsersComponent {
 
   ngOnInit(): void {
     this.getAll();
+    this.getAllRoles();
   }
 
   getAll(){
     this.http.post<UserModel[]>("Users/GetAll", {}, (res)=> {
       this.users = res.data;
+    });
+  }
+
+  getAllRoles(){
+    this.http.post<RoleModel[]>("Users/GetAllRoles",{}, res=> {
+      this.roles = res.data;
     });
   }
   
@@ -64,7 +71,9 @@ export class UsersComponent {
   }
 
   get(data: UserModel){    
-    this.updateModel = {...data};    
+    this.updateModel = {...data};
+    console.log(this.updateModel);
+        
   }
 
   update(form:NgForm){
